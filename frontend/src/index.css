@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0 auto;
+}
+
+.error, .success {
+  background: lightgrey;
+  font-size: 20px;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+  
+.error {
+  color: red;
+  border-color: red;
+}
+
+.success {
+  color: green;
+  border-color: green;
+}

@@ -1,0 +1,14 @@
+services:
+  mongodb:
+    image: mongo
+    container_name: phonebook-mongo
+    ports:
+      - 127.0.0.1:27017:27017
+    volumes:
+      - phonebook-mongo-data:/data/db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: secret
+
+volumes:
+  phonebook-mongo-data:
